@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131416;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+.clock {
+    background: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 10 10px 5px  white;
+}
+
+.wrap {
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+.haut {
+    position: absolute;
+    background: black;
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 15px;
+    top: -5px;
+    left: 23vb;
+    display: flex;
+    justify-content: center;
+    transform-origin:  center;
+}
+
+.bas {
+    position: absolute;
+    background: black;
+    padding: 0;
+    margin: 0;
+    width: 5px;
+    height: 15px;
+    bottom: -5px;
+    left: 23vb;
+    display: flex;
+    justify-content: center;
+    transform-origin:  center;
+}
+
+.droit {
+    position: absolute;
+    background: black;
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    height: 5px;
+    right: -5px;
+    top: 23vh;
+    display: flex;
+    justify-content: center;
+    transform-origin:  center;
+}
+
+.gauche {
+    position: absolute;
+    background: black;
+    color: red;
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    height: 5px;
+    left: 10px;
+    top: 23vh;
+    display: flex;
+    justify-content: center;
+    transform-origin: left center;
+    transform: rotate(180deg);
+
+}
+
+.heure12 {
+    position: absolute;
+    color: #ff4b3e;
+    padding: 0;
+    margin: 0;
+    left:20.5vh;
+    font-weight: bold;
+    top: 2px;
+    font-size: 2.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.heure3 {
+    position: absolute;
+    color: #ff4b3e;
+    padding: 0;
+    margin: 0;
+    top: 20.1vh;
+    right: 10px;
+    font-size: 2.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.heure6 {
+    position: absolute;
+    color: #ff4b3e;
+    padding: 0;
+    margin: 0;
+    left: 22vh;
+    bottom: 2px;
+    font-size: 2.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.heure9 {
+    position: absolute;
+    color: #ff4b3e;
+    padding: 0;
+    margin: 0;
+    left: 10px;
+    bottom: 20.5vh;
+    font-size: 2.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.minute, .heure {
+    position: absolute;
+    height: 100px; width: 6px;
+    background: black;
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.minute {
+    position: absolute;
+    background: blue;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.second {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -26%;
+    background: #ff4b3e;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+
+.point {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 2px solid #1b1b1b;
+    border-radius: 50%;
+
+}
+.numerique {
+    position: absolute;
+    color:red;
+    width: 320px;
+    text-align: center;
+    margin: auto;
+    padding: 13px;
+    background: gainsboro;
+    top: 52vh;
+    left: 0;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    box-shadow: 0 15px 39px gainsboro ;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+}
